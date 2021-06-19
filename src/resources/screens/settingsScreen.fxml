@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Engine">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #373737;">
+         <children>
+            <HBox alignment="CENTER" opacity="0.0" />
+            <VBox alignment="CENTER" prefHeight="251.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Text fill="#eeeeee" strokeType="OUTSIDE" strokeWidth="0.0" text="Music">
+                           <font>
+                              <Font name="Consolas" size="32.0" />
+                           </font>
+                        </Text>
+                        <Slider fx:id="musicSlider" max="1.0" style="-fx-opacity: 0.7;" value="0.5" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Text fill="#eeeeee" strokeType="OUTSIDE" strokeWidth="0.0" text="Sound">
+                           <font>
+                              <Font name="Consolas" size="32.0" />
+                           </font>
+                        </Text>
+                        <Slider fx:id="soundSlider" max="1.0" style="-fx-opacity: 0.7;" value="0.5" />
+                     </children>
+                  </HBox>
+                  <Button id="play" fx:id="toggleFullscreen" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#goFullScreenEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" textAlignment="CENTER" textFill="#000000">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#goBackEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Back" textAlignment="CENTER" textFill="#000000">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Group>

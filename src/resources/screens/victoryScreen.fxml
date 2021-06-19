@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Engine">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #1adb64;">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You Win" textAlignment="CENTER">
+                           <font>
+                              <Font name="Verdana" size="69.0" />
+                           </font>
+                        </Text>
+                        <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#restartEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #666666; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Restart" textAlignment="CENTER" textFill="#1adb64">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button id="settings" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#goToMenuEventMethod" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #666666; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Go to menu" textAlignment="CENTER" textFill="#1adb64">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Group>

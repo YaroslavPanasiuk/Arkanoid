@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Engine">
+   <children>
+      <Rectangle fx:id="pauseScreen" arcHeight="5.0" arcWidth="5.0" fill="#888888" height="600.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0">
+               <children>
+                  <StackPane prefHeight="0.0" prefWidth="0.0">
+                     <children>
+                        <Rectangle fx:id="smallPauseScreen" arcHeight="50.0" arcWidth="50.0" fill="#555555" height="300.0" stroke="#373737" strokeType="INSIDE" strokeWidth="3.0" width="450.0" />
+                        <VBox alignment="CENTER" prefHeight="0.0" prefWidth="0.0" spacing="20.0">
+                           <children>
+                              <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#resumeEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Resume" textAlignment="CENTER" textFill="#000000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#restartEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Restart" textAlignment="CENTER" textFill="#000000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#settingsEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Settings" textAlignment="CENTER" textFill="#000000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button id="play" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#goToMenuEventMethod" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #84CE39; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #999999; -fx-border-radius: 10;" text="Go to menu" textAlignment="CENTER" textFill="#000000">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Group>
